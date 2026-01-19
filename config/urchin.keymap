@@ -13,10 +13,15 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+
+// Layer definitions
+#define BASE 0
 #define NAV_L 1
 #define OTHER_L 2
 #define NUM_L 3
 #define SYM_L 4
+// -----------------
+
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace 
 
@@ -180,6 +185,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            label = "Base";
             bindings = <
 //        ┌───┬─────────────┬─────────────┬─────────────────────┬───────────┐       ┌──────────┬─────────────────────┬─────────────┬─────────────┬───┐
 //        │ Q │      W      │      E      │          R          │     T     │       │    Y     │          U          │      I      │      O      │ P │
@@ -198,6 +204,7 @@
         };
 
         VimNav {
+            label = "VimNav";
             bindings = <
 //        ┌─────────┬─────────┬───────────────────┬─────────────────────┬──────┐       ┌────────────────┬────────────────┬──────────────┬────────────────┬───────────┐
 //        │         │ lgui(T) │       mbck        │        mfwd         │ mclk │       │      home      │      pgdn      │     pgup     │      end       │ lgui(spc) │
@@ -216,6 +223,7 @@
         };
 
         NumRow {
+            label = "NumRow";
             bindings = <
 //        ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
 //        │     │     │     │     │     │       │     │     │     │     │     │
@@ -234,6 +242,7 @@
         };
 
         Board {
+            label = "Settings";
             bindings = <
 //        ┌──────────┬──────────┬──────────┬──────────┬────────────┐       ┌──────┬─────┬───┬───┬───┐
 //        │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_clr_ALL │       │  *   │  7  │ 8 │ 9 │ + │
