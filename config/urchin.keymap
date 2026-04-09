@@ -187,57 +187,57 @@
         default_layer {
             label = "Base";
             bindings = <
-//        ┌───┬─────────────┬─────────────┬─────────────────────┬───────────┐       ┌──────────┬─────────────────────┬─────────────┬─────────────┬───┐
-//        │ Q │      W      │      E      │          R          │     T     │       │    Y     │          U          │      I      │      O      │ P │
-//        ├───┼─────────────┼─────────────┼─────────────────────┼───────────┤       ├──────────┼─────────────────────┼─────────────┼─────────────┼───┤
-//        │ A │ &hml lgui S │ &hml lalt D │ &hml left_CONTROL F │     G     │       │    H     │ &hmr rght_CONTROL J │ &hmr lalt K │ &hmr rgui L │ ; │
-//        ├───┼─────────────┼─────────────┼─────────────────────┼───────────┤       ├──────────┼─────────────────────┼─────────────┼─────────────┼───┤
-//        │ Z │      X      │      C      │          V          │     B     │       │    N     │          M          │      ,      │      .      │ / │
-//        └───┴─────────────┴─────────────┼─────────────────────┼───────────┤       ├──────────┼─────────────────────┼─────────────┴─────────────┴───┘
-//                                        │     mt lsft esc     │ lt 1 bspc │       │ lt 2 spc │     mt rsft ent     │
-//                                        └─────────────────────┴───────────┘       └──────────┴─────────────────────┘
-      &kp Q   &kp W             &kp E         &kp R                 &kp T                     &kp Y         &kp U                   &kp I         &kp O              &kp P
-      &kp A   &hml LEFT_GUI S   &hml LALT D   &hml LEFT_CONTROL F   &kp G                     &kp H         &hmr RIGHT_CONTROL J    &hmr LALT K   &hmr RIGHT_GUI L   &kp SEMICOLON
-      &kp Z   &kp X             &kp C         &kp V                 &kp B                     &kp N         &kp M                   &kp COMMA     &kp PERIOD         &kp FSLH
-                                              &mt LSHFT ESC         &lt 1 BACKSPACE           &lt 2 SPACE   &mt RIGHT_SHIFT ENTER
+//        ┌───┬─────────────┬─────────────────────┬─────────────┬───────────┐       ┌──────────┬─────────────┬─────────────────────┬─────────────┬───┐
+//        │ Q │      W      │          E          │      R      │     T     │       │    Y     │      U      │          I          │      O      │ P │
+//        ├───┼─────────────┼─────────────────────┼─────────────┼───────────┤       ├──────────┼─────────────┼─────────────────────┼─────────────┼───┤
+//        │ A │ &hml lgui S │ &hml left_CONTROL D │ &hml lalt F │     G     │       │    H     │ &hmr lalt J │ &hmr rght_CONTROL K │ &hmr rgui L │ ; │
+//        ├───┼─────────────┼─────────────────────┼─────────────┼───────────┤       ├──────────┼─────────────┼─────────────────────┼─────────────┼───┤
+//        │ Z │      X      │          C          │      V      │     B     │       │    N     │      M      │          ,          │      .      │ / │
+//        └───┴─────────────┴─────────────────────┼─────────────┼───────────┤       ├──────────┼─────────────┼─────────────────────┴─────────────┴───┘
+//                                                │ mt lsft esc │ lt 1 bspc │       │ lt 2 spc │ mt rsft ent │
+//                                                └─────────────┴───────────┘       └──────────┴─────────────┘
+      &kp Q   &kp W             &kp E                 &kp R           &kp T                     &kp Y         &kp U                   &kp I                  &kp O              &kp P
+      &kp A   &hml LEFT_GUI S   &hml LEFT_CONTROL D   &hml LALT F     &kp G                     &kp H         &hmr LALT J             &hmr RIGHT_CONTROL K   &hmr RIGHT_GUI L   &kp SEMICOLON
+      &kp Z   &kp X             &kp C                 &kp V           &kp B                     &kp N         &kp M                   &kp COMMA              &kp PERIOD         &kp FSLH
+                                                      &mt LSHFT ESC   &lt 1 BACKSPACE           &lt 2 SPACE   &mt RIGHT_SHIFT ENTER
             >;
         };
 
         VimNav {
             label = "VimNav";
             bindings = <
-//        ┌─────────┬─────────┬───────────────────┬─────────────────────┬──────┐       ┌────────────────┬────────────────┬──────────────┬────────────────┬───────────┐
-//        │         │ lgui(T) │       mbck        │        mfwd         │ mclk │       │      home      │      pgdn      │     pgup     │      end       │ lgui(spc) │
-//        ├─────────┼─────────┼───────────────────┼─────────────────────┼──────┤       ├────────────────┼────────────────┼──────────────┼────────────────┼───────────┤
-//        │ lgui(A) │ lgui(S) │ mt lalt lsft(tab) │ mt left_CONTROL tab │ lclk │       │      left      │      down      │      up      │      rght      │           │
-//        ├─────────┼─────────┼───────────────────┼─────────────────────┼──────┤       ├────────────────┼────────────────┼──────────────┼────────────────┼───────────┤
-//        │ lgui(Z) │ lgui(X) │      lgui(W)      │       lgui(V)       │ rclk │       │ &mmv MOVE_left │ &mmv MOVE_down │ &mmv MOVE_up │ &mmv MOVE_rght │           │
-//        └─────────┴─────────┴───────────────────┼─────────────────────┼──────┤       ├────────────────┼────────────────┼──────────────┴────────────────┴───────────┘
-//                                                │                     │      │       │                │      esc       │
-//                                                └─────────────────────┴──────┘       └────────────────┴────────────────┘
-      &trans      &kp LG(T)   &mkp MB4               &mkp MB5               &mkp MCLK           &kp HOME         &kp PAGE_DOWN    &kp PG_UP      &kp END           &kp LG(SPACE)
-      &kp LG(A)   &kp LG(S)   &mt LEFT_ALT LS(TAB)   &mt LEFT_CONTROL TAB   &mkp LCLK           &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT         &trans
-      &kp LG(Z)   &kp LG(X)   &kp LG(W)              &kp LG(V)              &mkp RCLK           &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &trans
-                                                     &trans                 &trans              &trans           &kp ESC
+//        ┌─────────┬─────────┬───────────────────────────┬─────────────┬──────┐       ┌────────────────┬────────────────┬──────────────┬────────────────┬───────────┐
+//        │         │ lgui(T) │          lgui([)          │   lgui(])   │ mclk │       │      home      │      pgdn      │     pgup     │      end       │ lgui(spc) │
+//        ├─────────┼─────────┼───────────────────────────┼─────────────┼──────┤       ├────────────────┼────────────────┼──────────────┼────────────────┼───────────┤
+//        │ lgui(A) │ lgui(S) │ mt left_CONTROL lsft(tab) │ mt lalt tab │ lclk │       │      left      │      down      │      up      │      rght      │           │
+//        ├─────────┼─────────┼───────────────────────────┼─────────────┼──────┤       ├────────────────┼────────────────┼──────────────┼────────────────┼───────────┤
+//        │ lgui(Z) │ lgui(X) │          lgui(W)          │   lgui(V)   │ rclk │       │ &mmv MOVE_left │ &mmv MOVE_down │ &mmv MOVE_up │ &mmv MOVE_rght │           │
+//        └─────────┴─────────┴───────────────────────────┼─────────────┼──────┤       ├────────────────┼────────────────┼──────────────┴────────────────┴───────────┘
+//                                                        │             │      │       │                │      esc       │
+//                                                        └─────────────┴──────┘       └────────────────┴────────────────┘
+      &trans      &kp LG(T)   &mkp LG(LBKT)              &mkp LG(RBKT)      &mkp MCLK           &kp HOME         &kp PAGE_DOWN    &kp PG_UP      &kp END           &kp LG(SPACE)
+      &kp LG(A)   &kp LG(S)   &mt LEFT_CONTROL LS(TAB)   &mt LEFT_ALT TAB   &mkp LCLK           &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT         &trans
+      &kp LG(Z)   &kp LG(X)   &kp LG(W)                  &kp LG(V)          &mkp RCLK           &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &trans
+                                                         &trans             &trans              &trans           &kp ESC
             >;
         };
 
         NumRow {
             label = "NumRow";
             bindings = <
-//        ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
-//        │     │     │     │     │     │       │     │     │     │     │     │
-//        ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-//        │  1  │  2  │  3  │  4  │  5  │       │  6  │  7  │  8  │  9  │  0  │
-//        ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-//        │     │     │     │     │     │       │     │     │     │     │     │
-//        └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
-//                          │     │     │       │     │     │
-//                          └─────┴─────┘       └─────┴─────┘
-      &trans   &trans   &trans   &trans   &trans           &trans   &trans   &trans   &trans   &trans
-      &kp N1   &kp N2   &kp N3   &kp N4   &kp N5           &kp N6   &kp N7   &kp N8   &kp N9   &kp N0
-      &trans   &trans   &trans   &trans   &trans           &trans   &trans   &trans   &trans   &trans
-                                 &trans   &trans           &trans   &trans
+//        ┌─────────┬─────────┬─────────┬─────────┬─────────┐       ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+//        │ rsft(1) │ rsft(2) │ rsft(3) │ rsft(4) │ rsft(5) │       │ lsft(6) │ lsft(7) │ lsft(8) │ lsft(9) │ lsft(0) │
+//        ├─────────┼─────────┼─────────┼─────────┼─────────┤       ├─────────┼─────────┼─────────┼─────────┼─────────┤
+//        │    1    │    2    │    3    │    4    │    5    │       │    6    │    7    │    8    │    9    │    0    │
+//        ├─────────┼─────────┼─────────┼─────────┼─────────┤       ├─────────┼─────────┼─────────┼─────────┼─────────┤
+//        │         │         │         │         │         │       │         │         │         │         │         │
+//        └─────────┴─────────┴─────────┼─────────┼─────────┤       ├─────────┼─────────┼─────────┴─────────┴─────────┘
+//                                      │         │         │       │         │         │
+//                                      └─────────┴─────────┘       └─────────┴─────────┘
+      &kp RS(N1)   &kp RS(N2)   &kp RS(N3)   &kp RS(N4)   &kp RS(N5)           &kp LS(N6)   &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)
+      &kp N1       &kp N2       &kp N3       &kp N4       &kp N5               &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
+      &trans       &trans       &trans       &trans       &trans               &trans       &trans       &trans       &trans       &trans
+                                             &trans       &trans               &trans       &trans
             >;
         };
 
