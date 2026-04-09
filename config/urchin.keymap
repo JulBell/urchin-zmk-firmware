@@ -215,7 +215,7 @@
 //        └─────────┴─────────┴───────────────────────────┼─────────────┼──────┤       ├────────────────┼────────────────┼──────────────┴────────────────┴───────────┘
 //                                                        │             │      │       │                │      esc       │
 //                                                        └─────────────┴──────┘       └────────────────┴────────────────┘
-      &trans      &kp LG(T)   &mkp LG(LBKT)              &mkp LG(RBKT)      &mkp MCLK           &kp HOME         &kp PAGE_DOWN    &kp PG_UP      &kp END           &kp LG(SPACE)
+      &trans      &kp LG(T)   &kp LG(LBKT)               &kp LG(RBKT)       &mkp MCLK           &kp HOME         &kp PAGE_DOWN    &kp PG_UP      &kp END           &kp LG(SPACE)
       &kp LG(A)   &kp LG(S)   &mt LEFT_CONTROL LS(TAB)   &mt LEFT_ALT TAB   &mkp LCLK           &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT         &trans
       &kp LG(Z)   &kp LG(X)   &kp LG(W)                  &kp LG(V)          &mkp RCLK           &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &trans
                                                          &trans             &trans              &trans           &kp ESC
